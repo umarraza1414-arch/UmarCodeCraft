@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://umarraza1414-arch.github.io/UmarCodeCraft/sitemap.xml
