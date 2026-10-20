@@ -75,7 +75,14 @@
             </svg>
             <div class="iconorname">
                 <div class="introname">SMS No</div>
-                <a href="sms:+923128771902" target="_blank">03128771902</a>
+                <div class="sms-row">
+
+                    <a href="sms:+923128771902"
+                    onclick="event.preventDefault(); alert('SMS service is currently unavailable.');">
+                    03128771902
+                </a>
+                <span class="status">Not available</span>
+            </div>
             </div>
         </div>
 
