@@ -362,6 +362,23 @@ main {
     align-items: flex-start;
 }
 
+.sms-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.status {
+    color: #dc2626;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+
 .introname {
     color: #6dd1a2;
     font-size: 0.9rem;
