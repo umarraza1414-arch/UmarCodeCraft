@@ -1,5 +1,5 @@
 
-# Hi, I'm Umar Raza
+# Hi, I'm Muhammad Umar Raza
 
 ### Aspiring Full-Stack Developer
 
