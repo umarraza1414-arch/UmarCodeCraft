@@ -999,6 +999,9 @@ footer {
         font-size: 1.05rem;
         padding: 15px 10px;
     }
+        
+    /* projects page styling  */
+    /* no need, same as table is good */
 
     /* Footer */
     .footpara {
@@ -1006,5 +1009,6 @@ footer {
         max-width: 900px;
         font-size: 1.1rem;
     }
+
 
 }
