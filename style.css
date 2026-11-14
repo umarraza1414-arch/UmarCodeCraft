@@ -46,7 +46,8 @@ body {
     --borders: #E5E7EB;
     /* link hover */
     --link-hover: #15803D;
-    --blue: #b4d5ff;
+    /* light black */
+    --light-black: #dbdbdb;
 
 }
 
@@ -421,7 +422,7 @@ footer {
     font-weight: 400;
     margin-top: 20px;
 
-} 
+}
 
 .footpara {
     text-align: center;
@@ -431,6 +432,209 @@ footer {
 }
 
 /* project page styling */
+
+.projectsec h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: var(--heading-text);
+    margin-top: 25px;
+
+}
+
+.projectsec h1 span {
+    color: var(--primary-green);
+}
+
+.projectsec .projectpara {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 10px;
+    color: var(--para-text);
+    margin: 20px auto;
+    max-width: 400px;
+
+}
+
+.projectsec .projects {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.firstproject,
+.secondproject {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    margin-top: 30px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    box-shadow: 0 3px 15px var(--para-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.firstproject img,
+.secondproject img {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.imgabt {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    background-color: var(--main-bg);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 3px 15px var(--para-text);
+}
+
+.imgabt h2 {
+    font-size: 1.7rem;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: var(--heading-text);
+
+
+}
+
+.comp {
+    color: var(--primary-green);
+    margin-top: -8px;
+    margin-left: 10px;
+    font-size: 0.9rem;
+}
+
+.imgpara {
+    color: var(--para-text);
+    margin-top: 8px;
+    padding: 0 10px;
+}
+
+.projectsource {
+    width: 100%;
+    height: 50px;
+    margin-top: 8px;
+    border-top: 1px solid var(--light-black);
+    background-color: var(--main-bg);
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.projectsource a {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* first link */
+
+.projectsource .first-a-of-projectsource a:link {
+    color: var(--primary-green);
+}
+
+.projectsource .first-a-of-projectsource a:visited {
+    color: var(--primary-green);
+}
+
+.projectsource .first-a-of-projectsource a:hover {
+    color: var(--link-hover);
+}
+
+.projectsource .first-a-of-projectsource a:active {
+    color: var(--link-hover);
+}
+
+/* second link */
+
+.projectsource .second-a-of-projectsource a:link {
+    color: var(--heading-text);
+}
+
+.projectsource .second-a-of-projectsource a:visited {
+    color: var(--heading-text);
+}
+
+.projectsource .second-a-of-projectsource a:hover {
+    color: var(--heading-text);
+}
+
+.projectsource .second-a-of-projectsource a:active {
+    color: var(--heading-text);
+}
+
+.comsoon {
+    border-top: 1px solid var(--light-black);
+    color: var(--heading-text);
+    padding: 12px;
+    margin-top: 8px;
+    text-align: center;
+    user-select: none;
+}
+
+.abtprojects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.abtprojects p {
+    text-align: center;
+    margin-top: 30px;
+    padding: 0 20px;
+    font-size: 1.5rem;
+    color: var(--heading-text);
+    font-weight: 500;
+
+}
+
+.abtprojects a:link {
+    color: var(--main-bg);
+    background-color: var(--primary-green);
+    padding: 15px;
+    text-align: center;
+    border-radius: 25px;
+    margin-top: 25px;
+
+}
+
+.abtprojects a:visited {
+    color: var(--main-bg);
+    background-color: var(--primary-green);
+}
+
+.abtprojects a:hover {
+    color: var(--main-bg);
+    background-color: var(--link-hover);
+    box-shadow: 0 3px 8px var(--para-text);
+    transform: translateY(-2px);
+    transition: all 0.3s ease 0s;
+}
+
+.abtprojects a:active {
+    color: var(--main-bg);
+    background-color: var(--link-hover);
+    box-shadow: 0 3px 8px var(--para-text);
+    transform: translateY(-2px);
+    transition: all 0.3s ease 0s;
+}
 
 
 /* TABLET RESPONSIVE (768px) */
@@ -547,12 +751,85 @@ footer {
         font-size: 1.1rem;
     }
 
+
+    /* project section styling */
+
+    .projectsec h1 {
+        font-size: 2.2rem;
+    }
+
+    .projectsec .projectpara {
+        font-size: 1.4rem;
+        max-width: 600px;
+    }
+
+    .firstproject,
+    .secondproject {
+        max-width: 500px;
+        height: auto;
+
+    }
+
+
+    .imgabt {
+        max-width: 500px;
+        height: auto;
+    }
+
+    .imgabt h2 {
+        font-size: 1.8rem;
+        margin-top: 7px;
+        margin-left: 15px;
+    }
+
+    .comp {
+        margin-left: 15px;
+        font-size: 1.1rem;
+    }
+
+    .imgpara {
+        padding: 0 16px;
+        font-size: 1.1rem;
+    }
+
+    .projectsource {
+        height: 60px;
+        margin-top: 15px;
+    }
+
+    .projectsource a {
+        font-size: 1.1rem;
+    }
+
+    /* first link */
+
+    .comsoon {
+        padding: 18px;
+        margin-top: 15px;
+        font-size: 1.1rem;
+    }
+
+    .abtprojects p {
+        margin-top: 35px;
+        font-size: 1.6rem;
+
+    }
+
+    .abtprojects a:link {
+        padding: 20px;
+        border-radius: 30px;
+        margin-top: 25px;
+        margin-bottom: 15px;
+
+    }
+
     /* Footer */
     .footpara {
         max-width: 800px;
         font-size: 1.05rem;
         padding: 23px 0;
     }
+
 
 }
 
