@@ -24,7 +24,7 @@ My personal portfolio showcasing my web development journey, skills, and work.
 
 ### Connect With Me
 
-- GitHub: [My GitHub Profile](https://github.com/)
+- GitHub: [My GitHub Profile](https://github.com/umarraza1414-arch)
 
 ---
 
