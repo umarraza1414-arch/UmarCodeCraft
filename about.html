@@ -4,115 +4,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn about Muhammad Umar Raza, an aspiring front-end developer passionate about HTML, CSS, and creating modern, responsive websites.">
+    <meta name="description"
+        content="Learn about Muhammad Umar Raza, a front-end developer specializing in HTML, CSS, responsive web design, and clean user-friendly websites.">
     <meta name="author" content="Muhammad Umar Raza">
-    <meta name="creator" content="Muhammad Umar Raza">
-    <meta name="publisher" content="Muhammad Umar Raza">
     <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#0B0F1A">
-    <meta property="og:title" content="About Us | UmarCodeCraft">
-    <meta property="og:description" content="Learn about Muhammad Umar Raza, an aspiring front-end developer passionate about HTML, CSS, and creating modern, responsive websites.">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="UmarCodeCraft">
+    <meta name="theme-color" content="#16A34A">
+
+    <title>About Me | UmarCodeCraft</title>
+
+    <meta property="og:title" content="About Me | UmarCodeCraft">
+    <meta property="og:description"
+        content="Muhammad Umar Raza is a front-end developer building clean, responsive, and user-friendly websites.">
     <meta property="og:url" content="https://umarraza1414-arch.github.io/UmarCodeCraft/about.html">
     <meta property="og:image" content="https://umarraza1414-arch.github.io/UmarCodeCraft/ogimage.png">
-    <title>About Us | UmarCodeCraft</title>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="UmarCodeCraft">
+
+    <link rel="canonical" href="https://umarraza1414-arch.github.io/UmarCodeCraft/about.html">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/svg+xml" href="icon.svg">
-    <!-- open sans font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
-    <!-- inter font -->
+    <link rel="icon" href="icon.svg" type="image/svg+xml">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
-    <!-- work sans font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <nav class="navbar">
-            <div class="first">
-                <ul>
-                    <li>
-                        <a href="index.html">
-                            <h1 class="logoh1">Umar<span class="x">CodeCraft</span>
-                            </h1>
-                            <p class="brandname">by UR Labs</p>
-                        </a>
-                    </li>
-                </ul>
+        <div id="overlay" onclick="toggleMenu()"></div>
+        <nav class="navbar" id="navbar">
+            <div class="logotolinks">
+
+                <div class="wrapper">
+                    <!-- logo -->
+                <div class="logo">
+                    <a href="index.html">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" class="brand-logo"
+                        aria-hidden="true">
+                            <defs>
+                                <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+                                    <stop offset="0%" stop-color="#059669" />
+                                    <stop offset="100%" stop-color="#047857" />
+                                </linearGradient>
+                            </defs>
+
+                            <path d="M17 15 V35 C17 47 23 52 32 52 S47 47 47 35 V15" fill="none" stroke="url(#g)"
+                                stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+                <!-- umarcodecraft + ur labs -->
+                <div class="left">
+                    <a href="index.html">Umar<span>CodeCraft</span></a>
+                    <div class="brand">by UR Labs</div>
+                </div>
             </div>
-            <div class="last">
+            
+            <div class="right">
                 <ul id="slidebar">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html" class="activebutton">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <!-- home link with icon -->
+                    <li class="homeli"><a href="index.html">
+                        <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                        Home
+                    </a></li>
+                    <!-- projects link with icon -->
+                    <li class="projectsli"><a href="projects.html">
+                        <svg viewBox="0 0 24 24"><path d="M10 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/></svg>
+                        Projects
+                    </a></li>
+                    <!-- about link with icon -->
+                    <li class="aboutli"><a href="about.html">
+                         <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                        About
+                    </a></li>
+                    <!-- contact link with icon -->
+                    <li class="contactli"><a href="contact.html">
+                        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        Contact
+                    </a></li>
+                    <li>© 2026 UmarCodeCraft</li>
                 </ul>
             </div>
-            <div class="hamburger" id="hamburger">&#9776;</div>
+        </div>
+            <div>
+                <button class="hamburger" id="hamburger">
+                    &#9776;
+                </button>
+            </div>
         </nav>
     </header>
-    <section class="firstabout">
-        <h2>About <span class="me">Me</span></h2>
-    </section>
-    <section class="about">
-        <div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
-                <path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-4 0-8 2-8 6v2h16v-2c0-4-4-6-8-6z"
-                    fill="#34D399" />
-            </svg>
-            <div class="iconorname">
-                <div class="introname">Name</div>
-                <div class="workname">Muhammad Umar Raza</div>
+
+    <main>
+        <section class="about-hero">
+            <div class="avatarimg">
+                <figure>
+                    <img src="avatar.png" alt="Illustrated avatar of Muhammad Umar Raza">
+                </figure>
+                <div><h1>Muhammad Umar Raza</h1></div>
+                <div><p>--Aspiring Front-End Developer--</p></div>
             </div>
-        </div>
+            <h1>About <span>Me</span></h1>
+            <p class="about-para">
+                Hi, I’m Muhammad Umar Raza, an aspiring Front-End Developer. I enjoy turning ideas into clean,
+                responsive, and user-friendly websites using HTML, CSS, and Responsive Design.
+            </p>
 
-        <div>
-
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
-                <path d="M8 17l-5-5 5-5m8 0l5 5-5 5" fill="#34D399" />
-            </svg>
-            <div class="iconorname">
-                <div class="introname">Role</div>
-                <div class="workname">Front-end Developer</div>
+            <div class="introlinks">
+                <div class="workslink">
+                    <a href="projects.html">Explore My Works &rarr;</a>
+                </div>
+                <div class="contactlink">
+                    <a href="contact.html">Contact Me</a>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <div>
+        <section class="about-card">
+            <h2>Who <span>I Am</span></h2>
+            <p class="abtfont">
+                I am an aspiring front-end developer passionate about building clean, modern, and responsive websites. I enjoy writing well-structured code, creating user-friendly layouts, and making websites look great across different screen sizes.
+            </p>
+            <p class="abtfont">
+                I am continuously improving my skills through hands-on practice and personal projects. My goal is to become a professional web developer and create meaningful digital experiences that solve real-world problems.
+            </p>
+        </section>
 
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
-                <path d="M9 21h6v-1H9v1zm3-20a7 7 0 00-4 12c.6.5 1 1.2 1 2h6c0-.8.4-1.5 1-2a7 7 0 00-4-12z"
-                    fill="#34D399" />
-            </svg>
-            <div class="iconorname">
-                <div class="introname">Focus</div>
-                <div class="workname">HTML, CSS, JS</div>
-            </div>
-        </div>
+        <section class="about-card">
+            <h2>My <span>Skills</span></h2>
+                <div class="skill-box">
+                    <h3>HTML</h3>
+                    <!-- <p>Semantic and accessible web structure</p> -->
+                </div>
 
-        <div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
-                <path
-                    d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16zm0-12a4 4 0 100 8 4 4 0 000-8z"
-                    fill="#34D399" />
-            </svg>
-            <div class="iconorname">
-                <div class="introname">Goal</div>
-                <div class="workname">Full-stack Developer</div>
-            </div>
-        </div>
+                <div class="skill-box">
+                    <h3>CSS</h3>
+                    <!-- <p>Responsive layouts, Flexbox, Grid, and modern styling</p> -->
+                </div>
 
+                <div class="skill-box">
+                    <h3>Responsive Design</h3>
+                    <!-- <p>Mobile-first websites for all screen sizes</p> -->
+                </div>
 
-    </section>
+                <div class="skill-box">
+                    <h3>Git & GitHub</h3>
+                    <!-- <p>Version control and project hosting</p> -->
+                </div>
+
+                <div class="skill-box">
+                    <h3>Problem Solving</h3>
+                    <!-- <p>Clean solutions and attention to detail</p> -->
+                </div>
+        </section>
+
+        <section class="about-card">
+            <h2>What <span>I Do</span></h2>
+
+            <ul class="about-services">
+                <li>Responsive Website Development</li>
+                <li>Landing Page Development</li>
+                <li>Website Redesign & Improvements</li>
+                <li>HTML & CSS Bug Fixing</li>
+            </ul>
+        </section>
+
+        <section class="about-card">
+            <h2>My <span>Journey</span></h2>
+            <p class="abtfont">
+                My journey into web development began with a curiosity about how websites are built and how people interact with them. I started with HTML and CSS, gradually exploring responsive design and JavaScript.
+            </p>
+            <p class="abtfont">
+                Since then, I have been building personal projects to strengthen my practical skills and gain hands-on experience. Each project gives me an opportunity to learn something new, improve my coding abilities, and take another step toward becoming a professional developer.
+            </p>
+        </section>
+    </main>
 
     <footer class="footer">
         <p class="footpara">&copy; 2026 UmarCodeCraft | Muhammad Umar Raza | A UR Labs Project</p>
