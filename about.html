@@ -33,7 +33,7 @@
 
 <body>
     <header>
-        <div id="overlay" onclick="toggleMenu()"></div>
+        <div id="overlay"></div>
         <nav class="navbar" id="navbar">
             <div class="logotolinks">
 
@@ -65,6 +65,12 @@
             
             <div class="right">
                 <ul id="slidebar">
+                    <!-- cross btn -->
+                        <li class="close-btn">
+                            <button id="closeSidebar" aria-label="Close menu">
+                                &#10005;
+                            </button>
+                        </li>
                     <!-- home link with icon -->
                     <li class="homeli"><a href="index.html">
                         <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
@@ -101,7 +107,7 @@
         <section class="about-hero">
             <div class="avatarimg">
                 <figure>
-                    <img src="avatar.png" alt="Illustrated avatar of Muhammad Umar Raza">
+                    <img src="avatar.webp" alt="Illustrated avatar of Muhammad Umar Raza">
                 </figure>
                 <div><h1>Muhammad Umar Raza</h1></div>
                 <div><p>--Aspiring Front-End Developer--</p></div>
