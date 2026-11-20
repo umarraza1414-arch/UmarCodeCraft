@@ -69,7 +69,7 @@ header {
     background-color: var(--main-bg);
     height: 65px;
     width: 100%;
-
+    z-index: 10;
 
 }
 
@@ -147,19 +147,71 @@ header {
     font-size: 1em;
     text-align: center;
     margin-top: auto;
-    margin-bottom: 30px;
+    position: relative;
+    top: -10px;
+
 }
 
 .navbar .right ul.active {
     right: 0;
-
 }
+
 
 .navbar .right ul li {
     list-style: none;
     margin: 15px 15px;
-    font-size: 1.2em;
+    font-size: 1.3em;
+    display: block;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
 
+}
+
+
+.navbar .right ul li svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--primary-green);
+
+
+}
+
+.navbar .right ul .homeli svg {
+    width: 23px;
+    height: 23px;
+    position: relative;
+    top: 4px;
+}
+
+.navbar .right ul .projectsli svg {
+    position: relative;
+    top: 3px;
+}
+
+.navbar .right ul .aboutli svg {
+    position: relative;
+    top: 3px;
+}
+
+.navbar .right ul .contactli svg {
+    position: relative;
+    top: 3px;
+}
+
+header #overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+header #overlay.active {
+    display: block;
 }
 
 a {
@@ -171,37 +223,25 @@ a {
 
 .navbar #slidebar a:link {
     color: var(--primary-green);
-    background-color: var(--main-bg);
-    font-size: 1.2rem;
-    border: 2px solid var(--borders);
-    border-radius: 20px;
-    box-shadow: 0 3px 10px var(--borders);
+    font-size: 1.3rem;
     text-align: center;
-    display: inline-block;
-    padding: 5px 20px;
+    display: block;
+    padding: 10px 20px;
+    /* background-color: red; */
 }
 
 .navbar #slidebar a:visited {
     color: var(--primary-green);
-    border: 2px solid var(--borders);
-    box-shadow: 0 3px 10px var(--borders);
-    background-color: var(--main-bg);
 }
 
 .navbar #slidebar a:hover {
     color: var(--link-hover);
-    background-color: var(--bg-color);
-    box-shadow: 0 3px 10px var(--borders);
-    border: 2px solid var(--borders);
     transform: translateY(-2px);
     transition: all 0.3s ease 0s;
 }
 
 .navbar #slidebar a:active {
     color: var(--link-hover);
-    background-color: var(--bg-color);
-    box-shadow: 0 3px 10px var(--borders);
-    border: 2px solid var(--borders);
     transform: translateY(-2px);
     transition: all 0.3s ease 0s;
 }
@@ -636,6 +676,131 @@ footer {
     transition: all 0.3s ease 0s;
 }
 
+/* About page styling */
+
+.abtfont {
+    font-size: 1.2rem;
+}
+
+.about-hero {
+    text-align: center;
+    padding: 40px 20px;
+}
+.about-hero .avatarimg img{
+    width: 200px;
+    height: 200px;
+    user-select: none;
+    margin-top: -15px;
+    border-radius: 50%;
+
+
+}
+.about-hero .avatarimg h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-top: -5px;
+    color: var(--para-text);
+}
+.about-hero .avatarimg p{
+    font-size: 1rem;
+    color: var(--primary-green);
+
+}
+
+.about-hero h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--heading-text);
+    margin-top: 20px;
+}
+
+.about-hero h1 span {
+    color: var(--primary-green);
+}
+
+.about-para {
+    max-width: 650px;
+    margin: 15px auto 0;
+    color: var(--para-text);
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.about-card {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: var(--main-bg);
+    border-radius: 25px;
+    box-shadow: 0 3px 15px var(--borders);
+    margin-top: 1px;
+}
+
+.about-card h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--heading-text);
+    margin-bottom: 15px;
+}
+
+.about-card h2 span {
+    color: var(--primary-green);
+}
+
+.about-card p {
+    color: var(--para-text);
+    margin-bottom: 12px;
+}
+
+
+.skill-box {
+    color: var(--para-text);
+    background-color: var(--main-bg);
+    font-size: 1rem;
+    border: 2px solid var(--borders);
+    border-radius: 20px;
+    box-shadow: 0 3px 10px var(--borders);
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+        user-select: none;
+
+    
+
+}
+
+.skill-box h3 {
+    font-family: "Poppins", sans-serif;
+    color: var(--heading-text);
+    font-size: 1.5rem;
+    font-weight: 600;
+    
+}
+
+
+.about-services li {
+    list-style: none;
+    color: var(--para-text);
+    background-color: var(--main-bg);
+    border: 2px solid var(--borders);
+    border-radius: 20px;
+    box-shadow: 0 3px 10px var(--borders);
+    padding: 12px;
+    margin-bottom: 12px;
+    text-align: center;
+    font-size: 1.2rem;
+    user-select: none;
+}
+
 
 /* TABLET RESPONSIVE (768px) */
 
@@ -830,6 +995,20 @@ footer {
         padding: 23px 0;
     }
 
+    /* about page styling */
+
+    .about-hero h1 {
+        font-size: 2.6rem;
+    }
+
+    .about-card {
+        padding: 30px;
+    }
+
+    .about-hero .avatarimg img{
+        width: 250px;
+        height: 250px;
+    }
 
 }
 
@@ -999,13 +1178,34 @@ footer {
         font-size: 1.05rem;
         padding: 15px 10px;
     }
-        
-    /* projects page styling  */
-    .projectsec h1{
+
+    /* projects page styling, almost same as tablet  */
+    .projectsec h1 {
         font-size: 3rem;
     }
-    /* no need, same as table is good */
 
+    /* About page styling */
+
+    .about-hero {
+        padding: 60px 20px;
+    }
+
+    .about-hero h1 {
+        font-size: 3rem;
+    }
+
+    .about-card {
+        width: 75%;
+        max-width: 1000px;
+    }
+
+    .about-hero .avatarimg img{
+        width: 300px;
+        height: 300px;
+    }
+    .about-hero .avatarimg h1{
+        font-size: 1.5rem;
+    }
     /* Footer */
     .footpara {
         padding: 28px 0;
