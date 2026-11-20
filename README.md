@@ -1,13 +1,13 @@
 
 # Hi, I'm Muhammad Umar Raza
 
-### Aspiring Full-Stack Developer
+### Aspiring Front-End Developer
 
 I'm passionate about web development and enjoy turning ideas into clean, responsive websites.
 
 - Currently strengthening my HTML & CSS skills
 - Building responsive web projects
-- Working towards becoming a professional Full-Stack Developer
+- Working towards becoming a professional Front-End Developer
 - Always learning and improving my development skills
 
 ### Technologies & Tools
