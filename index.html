@@ -5,7 +5,6 @@
     <!-- Basic Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="coqJwuvNN5zJhL_65JQFuNdxehGXoWm7LofULpnyL54" />
     <meta name="description"
         content="Muhammad Umar Raza is a front-end developer specializing in HTML, CSS, and responsive web design. Explore UmarCodeCraft, a portfolio built under UR Labs.">
     <meta name="author" content="Muhammad Umar Raza">
@@ -45,7 +44,8 @@
 
 <body>
     <header>
-        <nav class="navbar">
+        <div id="overlay" onclick="toggleMenu()"></div>
+        <nav class="navbar" id="navbar">
             <div class="logotolinks">
 
                 <div class="wrapper">
@@ -76,10 +76,26 @@
             
             <div class="right">
                 <ul id="slidebar">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <!-- home link with icon -->
+                    <li class="homeli"><a href="index.html">
+                        <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                        Home
+                    </a></li>
+                    <!-- projects link with icon -->
+                    <li class="projectsli"><a href="projects.html">
+                        <svg viewBox="0 0 24 24"><path d="M10 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/></svg>
+                        Projects
+                    </a></li>
+                    <!-- about link with icon -->
+                    <li class="aboutli"><a href="about.html">
+                         <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                        About
+                    </a></li>
+                    <!-- contact link with icon -->
+                    <li class="contactli"><a href="contact.html">
+                        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        Contact
+                    </a></li>
                     <li>© 2026 UmarCodeCraft</li>
                 </ul>
             </div>
