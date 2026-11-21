@@ -1189,19 +1189,19 @@ footer {
 
     .projectsec .projectpara {
         font-size: 1.4rem;
-        max-width: 600px;
+        max-width: 450px;
     }
 
     .firstproject,
     .secondproject {
-        max-width: 500px;
+        max-width: 450px;
         height: auto;
 
     }
 
 
     .imgabt {
-        max-width: 500px;
+        max-width: 450px;
         height: auto;
     }
 
